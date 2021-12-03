@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+      <header class="container">
+        <h1>The Code Review</h1>
+      </header>
+      <form action="index.html" method="post" class="form-container" autocomplete="on">
+
+        <h1 class="form-item">Signup for our newsletter</h1>
+        <p class="form-item">Get the latest news on how your code is doing right in your inbox</p>
+
+        <div class="border"></div>
+
+        <fieldset class="form-item  field-container bottom-border">
+          <legend class="field-item triple">Contact Information</legend>
+
+          <label for="name" class="field-item">Full Name</label>
+          <input type="text" id="name" name="user-name" class="field-item double" placeholder="Required" required autofocus>
+
+          <label for="mail" class="field-item">Email Address</label>
+          <input class="field-item double" type="email" id="mail" name="user-email" placeholder="Required" required>
+
+          <label for="tel" class="field-item">Phone Number</label>
+          <input class="field-item double" type="tel" id="tel" name="user-phone" placeholder="Optional">
+
+          <label for="street" class="field-item">Street Address</label>
+          <input class="field-item double" type="text" id="street" name="user-street" placeholder="Optional">
+
+          <label for="city" class="field-item">City</label>
+          <input class="field-item double" type="text" id="city" name="user-city" placeholder="Optional">
+
+          <label for="state" class="field-item">State</label>
+          <select class="field-item  double" id="state" name="user-state">
+            <option value="">Choose State</option>
+            <option value="Alberta">Alberta</option>
+            <option value="Saskatchewan">Saskatchewan</option>
+            <option value="Manitoba">Manitoba</option>
+            <option value="Yukon">Yukon</option>
+            <option value="NWT">NWT</option>
+            <option value="New Brunswick">New Brunswick</option>
+            <option value="NFL">NFL</option>
+            <option value="Prince Edward Island">Prince Edward Island</option>
+            <option value="Nova Scotia">Nova Scotia</option>
+            <option value="Quebec">Quebec</option>
+            <option value="Ontario">Ontario</option>
+            <option value="BC">BC</option>
+          </select>
+
+          <label for="zip" class="field-item">Zip Code</label>
+          <input class="field-item double" type="text" id="zip" name="user-zip" placeholder="Optional">
+
+        </fieldset>
+
+        <fieldset class="form-item field-container">
+          <legend class="field-item triple" >Newsletter</legend>
+          <p class="field-item triple" >Select the newsletter you would like to receive.</p>
+          <div class="field-item triple">
+            <input type="checkbox" id="html" name="user-newsletter" value="HTML">
+            <label for="html">HTML News</label><br>
+          </div>
+          <div class="field-item triple">
+            <input type="checkbox" id="css" name="user-newsletter" value="CSS">
+            <label for="css">CSS News</label><br>
+          </div>
+          <div class="field-item triple">
+            <input type="checkbox" id="javascript" name="user-newsletter" value="javascript">
+            <label for="javascript">JavaScript News</label>
+          </div>
+
+          <p class="field-item triple">Newsletter Format</p>
+
+          <div class="field-item triple">
+            <input type="radio" id="format-html" name="newsletter-format" value="HTML">
+            <label for="format-html">HTML</label><br>
+          </div>
+          <div class="field-item triple">
+            <input type="radio" id="plain-text" name="newsletter-format" value="plain text">
+            <label for="plain-text">Plain Text</label><br>
+          </div>
+
+          <div class="field-item triple">
+            <label for="topic">Other topics you'd like to hear about</label><br>
+            <textarea id="topic" name="user_topics"></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="form-item btn">Sign Up</button>
+
+      </form>
+      <footer>
+        <p>Copyright the Code Review</p>
+      </footer>
+    </body>
+</html>
