@@ -44,13 +44,14 @@ body{
   flex-wrap: wrap;
   padding: 12px 0px;
   border: none;
-  line-height: 2.25;
   font-size: 1.3em;
   margin-bottom: 20px;
 }
 
 .field-item{
   min-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* form */
@@ -88,7 +89,7 @@ legend{
 }
 
 input, select{
-  font-size: 1.4em;
+  font-size: 1.2em;
   padding: 8px 20px;
   margin: 8px 0;
   color: #08486e;
@@ -102,28 +103,23 @@ input::placeholder{
   font-size: .8em
 }
 
-/* form fieldset:first-child{
-  padding-bottom: 30px;
-  border-bottom: 2px solid #08486e;
-} */
-
 fieldset:hover{
   background-color: rgba(224, 244, 255, 0.5);
 }
 
 label:hover, label:focus{
   font-size: 1.2em;
-
+  transition: font-size 1s;
+  cursor: pointer;
 }
 
 input[type="text"]:hover, input[type="text"]:focus, input[type="email"]:hover, input[type="email"]:focus,
 input[type="tel"]:hover, input[type="tel"]:focus, select:hover, select:focus, textarea:hover, textarea:focus,
-input[type="radio"]:hover, input[type="radio"]:focus{
+input[type="checkbox"]:hover, input[type="checkbox"]:focus, input[type="radio"]:hover, input[type="radio"]:focus{
+  cursor: pointer;
   border: 2px solid #59FB04;
   transform: scale(1.04, 1.04);
   transition: transform 1s;
-  /* line-height: 1.6;
-  font-size: 1.5em; */
   outline: none;
 }
 
@@ -146,6 +142,7 @@ textarea{
   overflow-y: scroll;
   line-height: 1.15em;
   letter-spacing: 1.2px;
+  margin-top: 15px;
 }
 
 .btn{
@@ -179,12 +176,6 @@ footer{
   color: gray;
 }
 
-/* select option:hover, select option:focus{
-  min-width: inherit;
-  min-height: inherit;
-  background-color: #09964c;
-  z-index: 1;
-} */
 
 @media screen and (min-width: 768px) {
   .field-item{
@@ -202,7 +193,7 @@ footer{
     max-width: 100%
   }
   #zip{
-    min-width: 25%;
-    max-width: 25%;
+    min-width: 20%;
+    max-width: 20%;
   }
 }
